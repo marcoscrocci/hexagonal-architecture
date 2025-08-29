@@ -29,7 +29,7 @@ public class InsertCustomerUseCase implements InsertCustomerInputPort {
         var address = findAddressByZipCodeOutputPort.find(zipCode);
         customer.setAddress(address);
         insertCustomerOutputPort.insert(customer);
-        sendCpfForValidationOutputPort.send(customer.getCpf());
+        // ERRO: sendCpfForValidationOutputPort.send(customer.getCpf());
     }
 
 }
