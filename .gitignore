@@ -4,6 +4,8 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+downloads/mappings/address.json:Zone.Identifier
+downloads/mappings/address_2.json:Zone.Identifier
 
 ### STS ###
 .apt_generated
