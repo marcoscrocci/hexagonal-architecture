@@ -7,6 +7,7 @@ https://repo1.maven.org/maven2/org/wiremock/wiremock-standalone/4.0.0-beta.15/wi
 ### Fazer o download do arquivo jar e executar com o comando:
 >java -jar wiremock-standalone-4.0.0-beta.15.jar --port 8082
 
+
 ### Copiar os arquivos JSON da pasta download para a pasta mappings que o wiremock criou
 ### Digitar Ctrl+C para interromper o serviço do wiremock e inicie ele novamente
 ### Fazer requisições pelo Postman nos endereços:
@@ -26,6 +27,18 @@ Obs.: Isso deve retornar o JSON contido nos arquivos
 >docker exec -it d904d22e7856 /bin/bash
 >mongosh -u root -p
 Obs.: O password: example
+### Listar os bancos de dados
+>show dbs
+### Entrar no banco de dados
+>use hexagonal
+### Listar as coleções
+>show collections
+### Listar os documentos da coleção
+>db.customers.find().pretty()
+### Limpar a tela
+>cls
+### Sair do mongo e do conteiner
+>exit
 
 ### Instalar o pluggin Kafkalytic
 ### Adicionar o cluster
