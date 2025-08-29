@@ -27,3 +27,6 @@ Obs.: Isso deve retornar o JSON contido nos arquivos
 >mongosh -u root -p
 Obs.: O password: example
 
+### Instalar o pluggin Kafkalytic
+### Adicionar o cluster
+>localhost:9092
