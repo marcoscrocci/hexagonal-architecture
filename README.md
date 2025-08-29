@@ -23,7 +23,7 @@ Obs.: Isso deve retornar o JSON contido nos arquivos
 >docker ps
 
 ### Entrar no mongodb 
->docker exec -it d0a0206e0c7c /bin/bash
+>docker exec -it d904d22e7856 /bin/bash
 >mongosh -u root -p
 Obs.: O password: example
 
