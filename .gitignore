@@ -6,6 +6,7 @@ build/
 !**/src/test/**/build/
 downloads/mappings/address.json:Zone.Identifier
 downloads/mappings/address_2.json:Zone.Identifier
+.env
 
 ### STS ###
 .apt_generated

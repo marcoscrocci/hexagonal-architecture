@@ -6,7 +6,8 @@ https://repo1.maven.org/maven2/org/wiremock/wiremock-standalone/4.0.0-beta.15/wi
 
 ### Fazer o download do arquivo jar e executar com o comando:
 >java -jar wiremock-standalone-4.0.0-beta.15.jar --port 8082
-
+> ou para acesso externo rodando no Azure VM:
+> java -jar wiremock-standalone-4.0.0-beta.15.jar --port 8082 --bind-address 0.0.0.0
 
 ### Copiar os arquivos JSON da pasta download para a pasta mappings que o wiremock criou
 ### Digitar Ctrl+C para interromper o serviço do wiremock e inicie ele novamente
@@ -43,3 +44,10 @@ Obs.: O password: example
 ### Instalar o pluggin Kafkalytic
 ### Adicionar o cluster
 >localhost:9092
+
+### Rodar o projeto no Teminal
+>java -jar build/libs/hexagonal-0.0.1-SNAPSHOT.jar
+
+### Criar variável de ambiente no sistema operacional
+export MONGODB_URI="mongodb+srv://<user>:<password>@<cluster_name>.<cluster_id>.mongodb.net/hexagonal?retryWrites=true&w=majority"
+./gradlew bootRun
