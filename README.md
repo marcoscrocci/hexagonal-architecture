@@ -48,6 +48,6 @@ Obs.: O password: example
 ### Rodar o projeto no Teminal
 >java -jar build/libs/hexagonal-0.0.1-SNAPSHOT.jar
 
-### Criar variável de ambiente no sistema operacional
+### Criar variável de ambiente no sistema operacional e excutar o projeto com o comando:
 export MONGODB_URI="mongodb+srv://<user>:<password>@<cluster_name>.<cluster_id>.mongodb.net/hexagonal?retryWrites=true&w=majority"
 ./gradlew bootRun
